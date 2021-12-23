@@ -9,7 +9,7 @@ import CoreML
 import SwiftUI
 
 struct ContentView: View {
-    
+
     static var defaultWakeTime: Date {
         var components = DateComponents ()
         components.hour = 7
@@ -66,7 +66,7 @@ struct ContentView: View {
         
         NavigationView {
             Form {
-                VStack (alignment: .leading, spacing: 0){
+                Section {
                     Text("When do you want to wake up?")
                     .font(.headline)
 
@@ -74,7 +74,7 @@ struct ContentView: View {
                     .labelsHidden()
                 }
 
-                VStack (alignment: .leading, spacing: 0){
+               Section {
                 Text("Desired amount of sleep")
                     .font(.headline)
                 
@@ -82,7 +82,7 @@ struct ContentView: View {
                 }
                 
                 
-                VStack (alignment: .leading, spacing: 0){
+                Section {
                     Text("Daily coffee intake")
                     .font(.headline)
                 
